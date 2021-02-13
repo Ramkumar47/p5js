@@ -22,6 +22,7 @@ the js file is downloaded and placed in the library/ folder and its entry is upd
 index.html file. Following are few codes that were created using this library
 * fallBox_matterJs/
 * slideBalls_matterJs/
+* balls_Chain/
 
 ## things needed to figure out
 it is not as easy as it is on processing to save frames, since working on browser
