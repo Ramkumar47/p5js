@@ -24,8 +24,18 @@ index.html file. Following are few codes that were created using this library
 * slideBalls_matterJs/
 * balls_Chain/
 
-## things needed to figure out
-it is not as easy as it is on processing to save frames, since working on browser
-even the online editor does not work well, but seen people exporting thier output
-as animations, hence need to figure out a better way to save animation frames of
-the output
+## saveFrames with custom class function
+Previously, i faced issues in saving canvas frames for creating animations in p5.
+I tried **createCapture** but it looked quite complex to me. Hence i prepared a
+small class function that does the need to me. I named it as *ImageSaver*.
+Its a really small class that takes following inputs and create an instance
+* image base name (without extension or numerals)
+* extension (like 'png' or 'jpg')
+* number of numeral spaces to be considered (like 6 '0's as image000000.png)
+
+the created instance can be put inside the draw function and call the "save" subfunction
+of the instance to save the canvas image. Since this thing runs on a browser, it is
+strongly recommended to enable auto-download for images to prevent poping up for
+permission everytime which may ultimately lead to browser crash.
+It was tested on firefox and found to be doing its job well.
+
